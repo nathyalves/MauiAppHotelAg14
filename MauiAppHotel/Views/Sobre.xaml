@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#F0E68C">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="20">
+
+        <Label Text="Sobre"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="#000000" />
+
+        <Label Text="Desenvolvido por: Nathaly Cristine"
+               FontSize="Subtitle"
+               TextColor="#8B4513" />
+
+        <Label Text="Ano de Desenvolvimento: 2024"
+               FontSize="Subtitle"
+               TextColor="#8B4513" />
+
+        <Label Text="Este projeto visa criar um app simples de contratação de uma hospedagem."
+               FontSize="Body"
+               TextColor="#8B4513"
+               HorizontalTextAlignment="Center"
+               Margin="10,20,10,0" />
+
+        <!-- Botão Voltar -->
+        <Button Text="Voltar"
+                BackgroundColor="#D2691E"
+                TextColor="Black"
+                Clicked="VoltarButton_Clicked"
+                Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>
+

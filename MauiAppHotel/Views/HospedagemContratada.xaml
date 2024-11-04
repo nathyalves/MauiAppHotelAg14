@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#FFFACD">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte Super Luxo"
+               TextColor="#8B4513"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <StackLayout  Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " />
+                    <Label Text="2" 
+                           TextColor="#D2691E" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " />
+                    <Label Text="1" 
+                           TextColor="#D2691E" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
+                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Valor Total: " />
+                <Label Text="R$ 750,00" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                BackgroundColor="#A0522D"/>
+
+    </VerticalStackLayout>
+</ContentPage>
